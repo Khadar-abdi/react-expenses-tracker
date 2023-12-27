@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+ 
+}
+body{
+  font-family: 'Raleway', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.space{
+  margin:20px 0px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  height:100vh;
+}
+.header{
+  text-align:center;
+  background-color:dodgerblue;
+  padding:10px 0px;
+  color:white;
+  font-size:20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.container{
+  height:90%;
+  width:100%;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.add-expense{
+  display:flex;
+justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.expense-amount{
+  padding:3px 8px;
+  width:10%;
+}
+.expense-input{
+  padding:3px 8px;
+  margin:0px 10px;
+  width:40%;
+}
+
+.expense-button{
+  padding:4px 6px;
+  border:none;
+  border-radius: 6px;
+  background-color:#16c60c;
+  color:white
+}
+
+.expense-button:hover{
+cursor:pointer;
+
+}
+
+.balance{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:25px;
+}
+
+.expense{
+  width:500px;
+  margin:10px;
+  padding:15px 10px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  border-left:2px solid red
+}
+
+.expense:hover{
+  cursor:pointer;
+  font-weight: bold;
+  border-left:3px solid red
+}
+
+.remove:hover{
+  cursor: pointer;
+
+}
+
+.footer{
+  position: absolute;
+  width:100vw;
+  bottom: 0;
+  text-align: center
 }
